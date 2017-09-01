@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace War
 {
-    class Program
+    class Player
     {
-        static void Main(string[] args)
+
+        public List<Card> deck;
+
+        public Player()
         {
-            GameEngine engine = new GameEngine();
-            engine.StartNewGame();
+            deck = new List<Card>();
         }
+    
     }
 }
