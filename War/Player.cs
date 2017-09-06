@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace War
 {
-    class Player
+    public class Player
     {
 
         public List<Card> deck;

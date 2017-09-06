@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace War
 {
-    class DataDisplayingDevice
+    public class DataDisplayingDevice
     {
         public void DisplayGameData(int numberOfCardsInFirstPlayersDeck, Card firstPlayersCard,
                              int numberOfCardsInSecondPlayersDeck, Card secondPlayersCard)
@@ -19,9 +19,7 @@ namespace War
             Console.WriteLine("Card currently played by Player 2: " + secondPlayersCard.figure.ToString()
                                                          + " of " + secondPlayersCard.colour.ToString());
             Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }

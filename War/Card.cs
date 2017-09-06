@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace War
 {
-    class Card
+    public class Card
     {
         public Colour colour;
         public Figure figure;

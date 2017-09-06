@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace War
 {
-    class PreparationModule
+    public class PreparationModule
     {
 
         private List<Card> deck;
@@ -15,14 +15,14 @@ namespace War
         public List<Card> PrepareDeckToPlay()
         {
             deck = new List<Card>();
-            FillTheDeck(deck);
+            CreateADeck(deck);
             ShuffleTheDeck(deck);
             return deck;
         }
 
 
 
-        private void FillTheDeck(List <Card> deck)
+        public void CreateADeck(List <Card> deck)
         {
 
             for (int i = 0; i < 4; i++)
